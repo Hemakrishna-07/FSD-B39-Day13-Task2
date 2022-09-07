@@ -1,0 +1,105 @@
+.container {
+    /* max-width: 100% !important; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem !important;
+    /* background-color: aqua; */
+    /* border-radius: 2rem; */
+    border: 0.2rem solid black;
+    display: grid;   
+}
+
+.event {
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.seats {
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.content1 {
+    border: 0.15rem solid black;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "profile form1";
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    height: 200px;
+    /* aspect-ratio: 1/1; */
+    /* object-fit: cover; */
+    border-radius: 50%;
+    border: 0.15rem solid black;
+    margin: 0.5rem;
+    grid-area: profile;
+}
+
+.form1 {
+    /* background-color: bisque; */
+    padding: 1rem;
+    grid-area: form1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+label {
+    width: 200px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 830px) {
+    .content1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.2fr;
+        grid-template-areas:
+        "profile"
+        "form1";
+    }
+}
+
+#name {
+    width: 50%;
+    margin: 0.5rem;
+}
+
+#e-mail {
+    width: 50%;
+    margin: 0.5rem;
+}
+
+#phone {
+    width: 50%;
+    margin: 0.5rem;
+}
+
+#NoOfSeats {
+    width: 50%;
+    margin: 0.5rem;
+}
+
+#Attendee {
+    width: 50%;
+    margin: 0.5rem;
+}
+
+.submit {
+    width: 150px;
+}
+
+.cancel {
+    width: 150px;
+}
+
+.buttons {
+    place-content: center;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
